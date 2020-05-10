@@ -5,6 +5,7 @@
 /*цвет фона футера #2F303A */
 /*цвет адреса в футере rgba(255, 255, 255, 0.6); */
 /*цвет нижней строки футера rgba(255, 255, 255, 0.4); */
+/*цвет фона кнопки #F5F4FA */
 
 :root {
     --primary-text-color: #757575;
@@ -15,6 +16,7 @@
     --footer-bcground-color: #2F303A;
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --footer-sign-color: rgba(255, 255, 255, 0.4);
+    --button-bg-color: #F5F4FA;
 
 }
 
@@ -28,8 +30,31 @@ body {
     line-height: 1.71;
 }
 
+a {
+    text-decoration: none;
+}
+
 .list {
     list-style: none;
+}
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--button-bg-color);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
 }
 /* Logo */
 
@@ -40,8 +65,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
-
 }
 
 .logo  span {
@@ -56,7 +79,6 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -75,7 +97,6 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
 .contacts-nav .link:hover,
@@ -102,7 +123,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    text-decoration: none;
 }
 /* Advantages */
 
@@ -188,7 +208,6 @@ body {
     font-weight: 700;
     font-size: 22px;
     line-height: 1.18;
-    text-decoration: none;
 }
 
 .footer-logo span {
@@ -229,4 +248,31 @@ body {
 
     font-size: 12px;
     line-height: 2.0;
+}
+/* Портфолио */
+
+.portfolio-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+}
+
+.portfolio-subtitle {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
